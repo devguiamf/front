@@ -1,0 +1,20 @@
+<div class="content">
+
+  <div class="topo">
+    <h1>Glossário</h1>
+    <!-- <button id="button">Nova Avaliação</button> -->
+
+    <mat-form-field appearance="fill" class="select">
+      <mat-select [(value)]="selected" class="teste">
+        
+        <mat-option value="option1">Critérios</mat-option>
+        <mat-option value="option2">Palavras</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <hr>
+
+  <div class="avaliacoes">
+    <router-outlet></router-outlet>
+  </div>
+</div>

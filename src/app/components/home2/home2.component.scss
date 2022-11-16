@@ -1,0 +1,47 @@
+.content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-family: var(--font-Principal);
+
+
+  .topo{
+    height: 22%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-Principal);
+
+
+    h1{
+      font-size: 2.5em;
+      color: white;
+      align-self: end;
+      font-family: var(--font-Principal);
+
+    }
+  }
+  button{
+    width: 170px;
+    height: 50px;
+    color: white;
+    font-size: 1.3em ;
+    border: none;
+    background-color: #4b4b4b ;
+    align-self: end;
+    font-family: var(--font-Principal);
+
+  }
+
+  hr{
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+}
+
+.avaliacoes{
+  padding: 50px;
+  color: white;
+}

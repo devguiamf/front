@@ -1,0 +1,55 @@
+<div class="inputs1">
+  <form [formGroup]="formulario">
+    <div class="teste3">
+
+      <div>
+        <label class="label">Nome Completo</label>
+        <mat-form-field class="fomularioMail" appearance="outline">
+          <input matInput id="inputLogin" type="email" formControlName="name" [(ngModel)]="cadastro.name">
+        </mat-form-field>
+        <div class="validacao" *ngIf="formulario.get('name')?.errors?.['required'] && formulario.get('name')?.touched">
+          Nome Obrigatório
+        </div>
+      </div>
+
+      <div>
+        <label class="label">Email</label>
+        <mat-form-field class="fomularioMail" appearance="outline">
+          <input matInput formControlName="email" type="email" formControlName="email" placeholder="email@domain.com"
+            [(ngModel)]="cadastro.email">
+        </mat-form-field>
+        <div class="validacao"
+          *ngIf="formulario.get('email')?.errors?.['required'] && formulario.get('email')?.touched">
+          Email obrigatório
+        </div>
+      </div>
+
+
+      <div>
+
+        <label class="label">Senha</label>
+        <mat-form-field class="fomularioMail" appearance="outline">
+          <input matInput id="inputLogin" type="email" formControlName="senha" [(ngModel)]="cadastro.password_hash">
+
+        </mat-form-field>
+        <div class="validacao"
+          *ngIf="formulario.get('senha')?.errors?.['required'] && formulario.get('senha')?.touched">
+          Senha obrigatório
+        </div>
+      </div>
+
+      <div>
+        <label class="label">Confirmar Senha</label>
+        <mat-form-field class="fomularioMail" appearance="outline">
+          <input matInput formControlName="senha" type="password" formControlName="senhaC">
+        </mat-form-field>
+        <div class="validacao"
+          *ngIf="formulario.get('senhaC')?.errors?.['required'] && formulario.get('senhaC')?.touched">
+          senha obrigatório
+        </div>
+      </div>
+
+      <button mat-button id="button" [disabled]="!formulario.valid" (click)="realizarLogin()">Cadastrar</button>
+    </div>
+  </form>
+</div>

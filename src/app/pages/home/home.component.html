@@ -1,0 +1,29 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" mode="side" opened="true" fixedInViewport="true" >
+      <h3>Olá, Fulano</h3>
+      <hr>
+      <div class="nav-list">
+
+          <a routerLink="home" routerLinkActive="active">
+            Inicio
+            <label >
+              <img src="../../../assets//home.png" class="icon">
+            </label>
+          </a>
+
+          <a routerLink="glossario" routerLinkActive="active">
+            Glossario
+            <label>
+              <img src="../../../assets//dictionary.png" class="icon">
+            </label>
+          </a>
+
+      </div>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

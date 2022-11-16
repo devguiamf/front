@@ -1,0 +1,28 @@
+<div>
+  <h1>Criando Avaliação</h1>
+
+</div>
+<hr>
+
+<mat-card class="card mat-elevation-z6">
+  <mat-card-title>Nova Avaliação</mat-card-title>
+
+    <form class="form">
+      <mat-form-field>
+        <input matInput placeholder="" disabled="true" placeholder="Avaliador">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Titulo">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Descrição">
+      </mat-form-field>
+    </form>
+  <button mat-raised-button color="primary" (click)="salvar()" class="salvar">
+    Salvar
+  </button>
+
+  <button mat-raised-button color="warn" class="cancelar">
+    Cancelar
+  </button>
+</mat-card>

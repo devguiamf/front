@@ -1,0 +1,47 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+.salvar {
+  margin-right: 15px;
+  font-family: var(--font-Principal);
+}
+
+.cancelar{
+  font-family: var(--font-Principal);
+
+}
+.card{
+  padding: 30px;
+  width: 700px;
+  align-self: center;
+  margin-left: 200px;
+  font-family: var(--font-Principal);
+
+
+  .form{
+    font-family: var(--font-Principal);
+    width: 600px;
+
+  }
+}
+
+
+
+div{
+  height: 28%;
+  display :flex;
+  padding-left: 60px;
+
+  h1{
+    font-family: var(--font-Principal);
+    font-size: 2em;
+    color: white;
+    align-self: end;
+  }
+}
+
+hr{
+  width: 90%;
+  margin-bottom: 30px;
+}

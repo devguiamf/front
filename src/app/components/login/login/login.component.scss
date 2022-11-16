@@ -1,0 +1,70 @@
+.form{
+    margin-top: 100px;
+}
+
+.inputs1{
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 4%;
+    border-radius: 20px;
+    background-color: white;
+    font-family: var(--font-Principal);
+
+}
+
+.fomularioMail{
+    width: 90%;
+    margin-left: 4%;
+    font-family: var(--font-Principal);
+
+}
+
+.fomularioSenha{
+    width: 90%;
+    margin-left: 4%;
+    font-family: var(--font-Principal);
+
+}
+
+
+#button{
+    background-color:#2C2C2C ;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    margin-top: 35px;
+    margin-left: 130px;
+    font-family: var(--font-Principal);
+
+}
+
+
+#button:hover{
+    cursor: pointer;
+    color: white;
+
+}
+.validacao{
+    color: red;
+    font-size: small;
+    margin-top: -20px;
+    margin-left: 69%;
+    font-family: var(--font-Principal);
+
+}
+
+.teste3{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label{
+  font-family: var(--font-Principal);
+  margin-left: 5%;
+  font-size: large;
+}

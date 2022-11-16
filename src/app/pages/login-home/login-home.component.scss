@@ -1,0 +1,53 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+
+
+
+#container{
+    display: flex;
+    height: 100%;
+    font-family: var(--font-Principal);
+
+    div#col1{
+        width: 35%;
+        height: 100%;
+        background-color: #277BC0;
+        font-family: var(--font-Principal);
+
+        .content{
+            height: 90%;
+            background-color:#277BC0  ;
+
+            #botoes{
+
+                text-align: center;
+
+                button{
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    width: 150px;
+                    font-family: var(--font-Principal);
+
+                    color: white;
+
+                }
+            }
+
+        }
+
+    }
+
+    div#col2{
+        width: 65%;
+        height: 100vh;
+        background-color: #2C2C2C;
+        font-family: var(--font-Principal);
+
+    }
+}
+
+.active{
+    background: #2C2C2C;
+}
+
