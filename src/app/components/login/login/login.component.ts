@@ -1,3 +1,4 @@
+import { LoginService } from './../login.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -19,7 +20,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private route: Router
+    private route: Router,
+    private loginService: LoginService
     ) { }
 
   ngOnInit(): void {
@@ -28,8 +30,9 @@ export class LoginComponent implements OnInit {
       senha: ['',[Validators.required]]
     });
   }
+   onSubmit(){
+    this.loginService.login(this.login).subscribe(
+    (res) =>{console.log(res);})
 
-  realizarLogin(){
-    this.route.navigate(['/home'], {skipLocationChange: true})
-   }
+  }
 }

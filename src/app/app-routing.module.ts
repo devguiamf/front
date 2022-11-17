@@ -22,8 +22,7 @@ const routes: Routes = [
   ],
   canActivate:[ContaGuard]
 },
-  
-  
+
   {path: '',
   component: LoginHomeComponent,
   children: [
@@ -32,7 +31,7 @@ const routes: Routes = [
     {path: 'cadastro', component: CadastroComponent},
     ]
 },
-  
+
 ];
 
 @NgModule({
